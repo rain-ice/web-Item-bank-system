@@ -1,4 +1,4 @@
-package shiyan.controller;
+package controller;
 
 
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
-import model.User;
-import shiyan.dao.userdao;
+import dao.userdao;
+import table.User;
 
 
 
@@ -15,7 +15,7 @@ import shiyan.dao.userdao;
 @RequestMapping("/shiyan1")
 public class Shiyan1 {
 	
-	@Autowired(required=false) private userdao nd;
+	@Autowired(required=true) private userdao nd;
 	
 
     @RequestMapping("/shiyan2")

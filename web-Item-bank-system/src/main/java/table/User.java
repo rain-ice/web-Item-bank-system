@@ -1,4 +1,4 @@
-package model;
+package table;
 
 public class User {
 	private String username;
