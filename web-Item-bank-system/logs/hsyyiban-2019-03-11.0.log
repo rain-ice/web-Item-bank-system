@@ -1,0 +1,890 @@
+[ INFO ] [2019-03-11 15:51:50] shiyan.Start [50] - Starting Start on anstar-PC with PID 6556 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 15:51:50] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 15:51:50] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a6c88e3: startup date [Mon Mar 11 15:51:50 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:51:53] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 15:51:53] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:51:53] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 15:51:53] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 15:51:53] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;D:\apache-maven-3.5.3\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\eclipse;;.]
+[ INFO ] [2019-03-11 15:51:53] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 15:51:53] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 15:51:53] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 3500 ms
+[ INFO ] [2019-03-11 15:51:54] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 15:51:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 15:51:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 15:51:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 15:51:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2019-03-11 15:51:54] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [556] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiyan1': Unsatisfied dependency expressed through field 'dbhelper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'shiyan.db.DbHelper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[ INFO ] [2019-03-11 15:51:54] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ WARN ] [2019-03-11 15:51:54] org.apache.catalina.loader.WebappClassLoaderBase [180] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+[ INFO ] [2019-03-11 15:51:54] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2019-03-11 15:51:54] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dbhelper in shiyan.controller.Shiyan1 required a bean of type 'shiyan.db.DbHelper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'shiyan.db.DbHelper' in your configuration.
+
+[ INFO ] [2019-03-11 15:52:51] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 15:52:51] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 15:52:51] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@395d63ed: startup date [Mon Mar 11 15:52:51 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:52:54] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 15:52:54] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:52:54] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 15:52:54] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 15:52:54] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;D:\apache-maven-3.5.3\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\eclipse;;.]
+[ INFO ] [2019-03-11 15:52:54] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 15:52:54] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 15:52:54] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 3278 ms
+[ INFO ] [2019-03-11 15:52:54] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 15:52:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 15:52:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 15:52:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 15:52:54] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@395d63ed: startup date [Mon Mar 11 15:52:51 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/login]}" onto public java.lang.String shiyan.controller.Shiyan1.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:52:55] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:52:56] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 15:52:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 15:52:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 15:52:56] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2019-03-11 15:52:56] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:52:56] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 15:52:56] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 15:52:56] shiyan.Start [59] - Started Start in 5.39 seconds (JVM running for 6.158)
+[ INFO ] [2019-03-11 15:53:21] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@395d63ed: startup date [Mon Mar 11 15:52:51 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:53:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 15:53:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 15:53:22] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 15:53:22] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ca9da85: startup date [Mon Mar 11 15:53:22 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 15:53:22] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:53:22] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 15:53:22] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 15:53:22] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 15:53:22] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 15:53:22] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 718 ms
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 15:53:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 15:53:22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:53:23] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ca9da85: startup date [Mon Mar 11 15:53:22 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:53:23] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/login]}" onto public java.lang.String shiyan.controller.Shiyan1.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 15:53:23] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 15:53:23] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 15:53:23] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:53:23] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:53:23] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 15:53:23] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 15:53:23] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 15:53:23] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2019-03-11 15:53:23] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:53:23] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 15:53:23] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 15:53:23] shiyan.Start [59] - Started Start in 1.103 seconds (JVM running for 33.127)
+[ INFO ] [2019-03-11 15:53:23] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 15:54:04] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ca9da85: startup date [Mon Mar 11 15:53:22 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:54:04] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 15:54:04] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 15:54:05] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 15:54:05] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 15:54:05] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b26333b: startup date [Mon Mar 11 15:54:05 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:54:05] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 15:54:05] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:54:05] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 15:54:05] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 15:54:05] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 15:54:05] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 15:54:05] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 620 ms
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b26333b: startup date [Mon Mar 11 15:54:05 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/login]}" onto public java.lang.String shiyan.controller.Shiyan1.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 15:54:06] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 15:54:06] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 15:54:06] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+[ INFO ] [2019-03-11 15:54:06] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:54:06] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 15:54:06] shiyan.Start [59] - Started Start in 0.956 seconds (JVM running for 76.235)
+[ INFO ] [2019-03-11 15:54:06] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 15:54:48] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7b26333b: startup date [Mon Mar 11 15:54:05 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:54:48] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 15:54:48] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 15:54:48] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 15:54:48] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 15:54:48] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23d9c580: startup date [Mon Mar 11 15:54:48 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 15:54:49] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:54:49] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 15:54:49] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 15:54:49] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 15:54:49] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 588 ms
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23d9c580: startup date [Mon Mar 11 15:54:48 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/login]}" onto public java.lang.String shiyan.controller.Shiyan1.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 15:54:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 15:54:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 15:54:49] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 15:54:49] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:54:49] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 15:54:49] shiyan.Start [59] - Started Start in 0.976 seconds (JVM running for 119.791)
+[ INFO ] [2019-03-11 15:54:49] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [50] - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   DataSourceConfiguration.Generic matched:
+      - @ConditionalOnProperty (spring.datasource.type) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   DataSourceConfiguration.Hikari:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) found different value in property 'spring.datasource.type' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+[ INFO ] [2019-03-11 15:55:30] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@23d9c580: startup date [Mon Mar 11 15:54:48 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:55:30] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 15:55:30] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 15:55:31] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 15:55:31] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73eba0ba: startup date [Mon Mar 11 15:55:31 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 15:55:31] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:55:31] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 15:55:31] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 15:55:31] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 15:55:31] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 15:55:31] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 578 ms
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 15:55:31] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73eba0ba: startup date [Mon Mar 11 15:55:31 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/login]}" onto public java.lang.String shiyan.controller.Shiyan1.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:55:32] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 15:55:32] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 15:55:32] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 15:55:32] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 15:55:32] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 15:55:32] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 15:55:32] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 15:55:32] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 15:55:32] shiyan.Start [59] - Started Start in 0.889 seconds (JVM running for 162.138)
+[ INFO ] [2019-03-11 15:55:32] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:31:59] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73eba0ba: startup date [Mon Mar 11 15:55:31 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:31:59] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:31:59] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:32:00] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:32:00] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@432917c6: startup date [Mon Mar 11 16:32:00 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 16:32:00] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:32:00] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:32:00] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:32:00] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:32:00] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 618 ms
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@432917c6: startup date [Mon Mar 11 16:32:00 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:32:00] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:32:01] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:32:01] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:32:01] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:32:01] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:32:01] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:32:01] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:32:01] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 16:32:01] shiyan.Start [59] - Started Start in 0.953 seconds (JVM running for 2351.002)
+[ INFO ] [2019-03-11 16:32:01] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:32:25] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@432917c6: startup date [Mon Mar 11 16:32:00 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:32:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:32:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:32:26] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:32:26] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1574aeeb: startup date [Mon Mar 11 16:32:26 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 16:32:26] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:32:26] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:32:26] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:32:26] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:32:26] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 565 ms
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1574aeeb: startup date [Mon Mar 11 16:32:26 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:32:26] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:32:26] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:32:26] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:32:26] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:32:26] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 16:32:26] shiyan.Start [59] - Started Start in 0.841 seconds (JVM running for 2376.85)
+[ INFO ] [2019-03-11 16:32:26] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:33:34] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1574aeeb: startup date [Mon Mar 11 16:32:26 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:33:34] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:33:34] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:33:35] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:33:35] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@784f033c: startup date [Mon Mar 11 16:33:35 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 16:33:35] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:33:35] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:33:35] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:33:35] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:33:35] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 528 ms
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@784f033c: startup date [Mon Mar 11 16:33:35 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:33:35] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:33:35] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:33:35] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:33:35] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:33:35] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 16:33:35] shiyan.Start [59] - Started Start in 0.792 seconds (JVM running for 2445.861)
+[ INFO ] [2019-03-11 16:33:35] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:34:24] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@784f033c: startup date [Mon Mar 11 16:33:35 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:34:24] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:34:24] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:34:25] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:34:25] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c084586: startup date [Mon Mar 11 16:34:25 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8090 (http)
+[ INFO ] [2019-03-11 16:34:25] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:34:25] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:34:25] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:34:25] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:34:25] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 505 ms
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c084586: startup date [Mon Mar 11 16:34:25 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/shiyan]}" onto public java.lang.String shiyan.controller.UserList.shiyan() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:34:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:34:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:34:25] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:34:25] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8090"]
+[ INFO ] [2019-03-11 16:34:25] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8090 (http) with context path ''
+[ INFO ] [2019-03-11 16:34:25] shiyan.Start [59] - Started Start in 0.754 seconds (JVM running for 2495.678)
+[ INFO ] [2019-03-11 16:34:25] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:36:21] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c084586: startup date [Mon Mar 11 16:34:25 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:36:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:36:21] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:36:22] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:36:22] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7c296d: startup date [Mon Mar 11 16:36:22 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:36:22] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:36:22] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:36:22] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:36:22] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:36:22] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 532 ms
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7c296d: startup date [Mon Mar 11 16:36:22 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/shiyan]}" onto public java.lang.String shiyan.controller.UserList.shiyan() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:36:22] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:36:22] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:36:22] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:36:22] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:36:22] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-03-11 16:36:22] shiyan.Start [59] - Started Start in 0.814 seconds (JVM running for 2612.857)
+[ INFO ] [2019-03-11 16:36:22] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:36:34] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-03-11 16:36:34] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-03-11 16:36:34] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+[ ERROR] [2019-03-11 16:36:34] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:209)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:147)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:315)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:873)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ ERROR] [2019-03-11 16:37:10] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:209)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:147)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:315)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:873)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ ERROR] [2019-03-11 16:39:25] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:209)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:147)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:315)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:873)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO ] [2019-03-11 16:43:12] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d7c296d: startup date [Mon Mar 11 16:36:22 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:12] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:43:12] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:43:12] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:43:12] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:43:12] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45e04e71: startup date [Mon Mar 11 16:43:12 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:43:13] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:43:13] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:43:13] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:43:13] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:43:13] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 656 ms
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45e04e71: startup date [Mon Mar 11 16:43:12 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/shiyan],methods=[GET]}" onto public java.lang.String shiyan.controller.UserList.shiyan() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:43:13] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:43:13] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:43:13] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:43:13] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:43:13] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-03-11 16:43:13] shiyan.Start [59] - Started Start in 0.941 seconds (JVM running for 3023.742)
+[ INFO ] [2019-03-11 16:43:13] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:43:23] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-03-11 16:43:23] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-03-11 16:43:23] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+[ ERROR] [2019-03-11 16:43:23] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+javax.servlet.ServletException: Circular view path [shiyan]: would dispatch back to the current handler URL [/shiyan] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:209)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:147)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:315)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:873)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO ] [2019-03-11 16:43:36] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45e04e71: startup date [Mon Mar 11 16:43:12 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:36] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:43:36] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:43:36] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:43:36] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:43:36] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d41afc: startup date [Mon Mar 11 16:43:36 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:43:37] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:43:37] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:43:37] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:43:37] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:43:37] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 504 ms
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d41afc: startup date [Mon Mar 11 16:43:36 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/shiyan],methods=[GET]}" onto public java.lang.String shiyan.controller.UserList.shiyan() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:43:37] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:43:37] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:43:37] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:43:37] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:43:37] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-03-11 16:43:37] shiyan.Start [59] - Started Start in 0.759 seconds (JVM running for 3047.481)
+[ INFO ] [2019-03-11 16:43:37] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:43:40] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-03-11 16:43:40] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-03-11 16:43:40] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+[ INFO ] [2019-03-11 16:43:52] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d41afc: startup date [Mon Mar 11 16:43:36 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:52] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:43:52] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:43:52] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:43:52] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:43:52] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b0cdb: startup date [Mon Mar 11 16:43:52 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:43:53] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:43:53] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:43:53] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:43:53] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:43:53] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 557 ms
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b0cdb: startup date [Mon Mar 11 16:43:52 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/shiyan],methods=[GET]}" onto public java.lang.String shiyan.controller.UserList.shiyan() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:43:53] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:43:53] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:43:53] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:43:53] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:43:53] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-03-11 16:43:53] shiyan.Start [59] - Started Start in 0.789 seconds (JVM running for 3063.266)
+[ INFO ] [2019-03-11 16:43:53] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:43:54] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-03-11 16:43:54] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-03-11 16:43:54] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+[ INFO ] [2019-03-11 16:48:33] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b0cdb: startup date [Mon Mar 11 16:43:52 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:48:33] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:48:33] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:48:33] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:48:33] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:48:33] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@753aed8e: startup date [Mon Mar 11 16:48:33 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:48:33] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:48:33] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:48:33] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:48:33] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:48:34] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:48:34] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:48:34] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 522 ms
+[ INFO ] [2019-03-11 16:48:34] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:48:34] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:34] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:34] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:34] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ WARN ] [2019-03-11 16:48:34] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [556] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userList' defined in file [D:\git\web-Item-bank-system\target\classes\shiyan\controller\UserList.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [shiyan.controller.UserList]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.iceking cannot be resolved
+	The import com.xaobiao cannot be resolved
+	Syntax error, insert "}" to complete ClassBody
+
+[ INFO ] [2019-03-11 16:48:34] org.apache.catalina.core.StandardService [180] - Stopping service [Tomcat]
+[ INFO ] [2019-03-11 16:48:34] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ ERROR] [2019-03-11 16:48:34] org.springframework.boot.SpringApplication [837] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userList' defined in file [D:\git\web-Item-bank-system\target\classes\shiyan\controller\UserList.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [shiyan.controller.UserList]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.iceking cannot be resolved
+	The import com.xaobiao cannot be resolved
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at shiyan.Start.main(Start.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [shiyan.controller.UserList]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.iceking cannot be resolved
+	The import com.xaobiao cannot be resolved
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:182)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1220)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.iceking cannot be resolved
+	The import com.xaobiao cannot be resolved
+	Syntax error, insert "}" to complete ClassBody
+
+	at shiyan.controller.UserList.<init>(UserList.java:11)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:170)
+	... 24 common frames omitted
+[ INFO ] [2019-03-11 16:48:41] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:48:41] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:48:41] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a9e2b9f: startup date [Mon Mar 11 16:48:41 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:48:42] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:48:42] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:48:42] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:48:42] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:48:42] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 464 ms
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a9e2b9f: startup date [Mon Mar 11 16:48:41 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.outlogin]}" onto public java.lang.String shiyan.controller.UserList.logout() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.getlogin]}" onto public java.lang.String shiyan.controller.UserList.getLoginUser() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:48:42] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:48:42] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:48:42] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:48:42] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:48:42] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-03-11 16:48:42] shiyan.Start [59] - Started Start in 0.713 seconds (JVM running for 3352.24)
+[ INFO ] [2019-03-11 16:48:42] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 16:49:38] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [991] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a9e2b9f: startup date [Mon Mar 11 16:48:41 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:49:38] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [451] - Unregistering JMX-exposed beans on shutdown
+[ INFO ] [2019-03-11 16:49:38] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [185] - Unregistering JMX-exposed beans
+[ INFO ] [2019-03-11 16:49:39] shiyan.Start [50] - Starting Start on anstar-PC with PID 3592 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-03-11 16:49:39] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e53f70f: startup date [Mon Mar 11 16:49:39 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-03-11 16:49:39] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:49:39] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-03-11 16:49:39] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-03-11 16:49:39] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-03-11 16:49:39] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-03-11 16:49:39] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 513 ms
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-03-11 16:49:39] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e53f70f: startup date [Mon Mar 11 16:49:39 CST 2019]; root of context hierarchy
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.login]}" onto public java.lang.String shiyan.controller.UserList.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.outlogin]}" onto public java.lang.String shiyan.controller.UserList.logout() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/UserList.getlogin]}" onto public java.lang.String shiyan.controller.UserList.getLoginUser() throws java.lang.Exception
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:49:40] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-03-11 16:49:40] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-03-11 16:49:40] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-03-11 16:49:40] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-03-11 16:49:40] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-03-11 16:49:40] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-03-11 16:49:40] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-03-11 16:49:40] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-03-11 16:49:40] shiyan.Start [59] - Started Start in 0.727 seconds (JVM running for 3410.068)
+[ INFO ] [2019-03-11 16:49:40] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [56] - Condition evaluation unchanged
+[ INFO ] [2019-03-11 17:00:54] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-03-11 17:00:54] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-03-11 17:00:54] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
