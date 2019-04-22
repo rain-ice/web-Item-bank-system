@@ -1,0 +1,41 @@
+
+ <div class="mdui-panel-item">
+		    <div class="mdui-panel-item-header">
+		      <div class="mdui-panel-item-title">${id}</div>
+		      <div class="mdui-panel-item-summary">${question}</div>
+		      <div class="mdui-panel-item-summary">${typename}</div>
+		      <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+		    </div>
+		    <div class="mdui-panel-item-body">
+		      <h2>问题：${question}</h2>
+		      <p>
+		      <div class="mdui-chip">
+				  <span class="mdui-chip-icon">A</span>
+				  <span class="mdui-chip-title">${answer_a}</span>
+			  </div>
+			  <div class="mdui-chip">
+				  <span class="mdui-chip-icon">B</span>
+				  <span class="mdui-chip-title">${answer_b}</span>
+			  </div>
+		      </p>
+		     <p>
+		      <div class="mdui-chip">
+				  <span class="mdui-chip-icon">C</span>
+				  <span class="mdui-chip-title">${answer_c}</span>
+			  </div>
+			  <div class="mdui-chip">
+				  <span class="mdui-chip-icon">D</span>
+				  <span class="mdui-chip-title">${answer_d}</span>
+			  </div>
+		      </p>
+		      <p>答案:${answer}</p>
+		      <p>难度：${level}</p>
+		      <p>创建老师：${username}</p>
+		      <p>所属知识点：${pointname}</p>
+		      <p>创建时间：${create_date}</p>
+		      <div class="mdui-panel-item-actions">
+		        <button class="mdui-btn mdui-ripple" onclick="question_del(${id},${teacherid})">删除</button>
+		        <button class="mdui-btn mdui-ripple" onclick="modifyquestion(${id},${teacherid})">修改</button>
+		      </div>
+		    </div>
+		  </div>

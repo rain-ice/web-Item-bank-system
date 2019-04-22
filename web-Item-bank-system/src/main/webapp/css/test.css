@@ -1,0 +1,12 @@
+
+.test_content_nr{width:100%; border-top:3px solid #efefef;}
+.test_content_nr>ul>li{width:100%;  border-bottom:5px solid #efefef; padding-top:10px;}
+
+.answerSheet ul{padding:10px; text-align:left;}
+.answerSheet li{ display:inline-block;margin:5px; height:30px; width:30px; line-height:30px; text-align:center; border:1px solid #e4e4e4;}
+.answerSheet li a{display:block;}
+.answerSheet li:hover{color:#389fc3;border-color: #389fc3;}
+
+
+/*nr_right end*/
+/*nr end*/

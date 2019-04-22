@@ -1,0 +1,74 @@
+<style>
+.synopsis{
+text-align: center;
+margin: 20px;
+border-radius: 10px;
+
+height: 110px;
+color: white;
+line-height: 110px;
+font-size: 20px;
+}
+
+
+</style>
+
+<div class="mdui-row-xs-3">
+
+	<div class="mdui-col" >
+		<div class="synopsis" style="background: #63b5ef;">
+			<i class="mdui-icon material-icons">description</i>
+			<span>试题总数（<span id="questionnumber"></span>）</span>
+		</div>
+	</div>
+	<div class="mdui-col" >
+		<div class="synopsis" style="background: #92cb7b;">
+			<i class="mdui-icon material-icons">dns</i>
+			<span>分类（<span id="pointnumber"></span>）</span>
+		</div>
+	</div>
+	
+	<div class="mdui-col" >
+		<div class="synopsis" style="background:#efd07c;">
+			<i class="mdui-icon material-icons">book</i>
+			<span>个人试题（<span id="myquestionnumber"></span>）</span>
+		</div>
+	</div>
+	
+</div>
+<div style="margin-right: 20px;height:500px">
+	
+	<div id="pointdiv" class="mdui-col-xs-2 mdui-shadow-4" style=" position: fixed;" >
+		<div >
+			<button class="mdui-btn" onclick="findquestionOfpoint('0')">所有知识点</button>
+		</div>
+		<div >
+			<ul class="mdui-list" id="pointslist"></ul>
+		</div>
+		<br>
+	</div>
+	<div class=" mdui-shadow-4" style=" width:970px;margin-left: 30px;float: right;">
+		<div style="padding: 20px;">
+			<form id="form1"method="post"  onsubmit="return false;">
+				
+				
+			</form>
+			<button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="question_previouspage()" >
+				<i class="mdui-icon material-icons">arrow_back</i>
+			</button>
+			<input id="input_question_page"  type="text" name="page" style="width: 35px;" value="0">
+			<button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="question_nextpage()">
+				<i class="mdui-icon material-icons">arrow_forward</i>
+			</button>
+			<span>/<span id="totalpage"></span>页</span>
+			<button class="mdui-btn mdui-color-theme-100 " style="float: right;" onclick="modifyquestion('0',null)">新建题库</button>
+			<button class="mdui-btn mdui-color-theme-100 " style="float: right;" onclick="myquestion()">只查看自己的信息</button>
+		</div>
+		
+		<div class="mdui-panel" mdui-panel="{accordion: true}">
+
+		</div>
+		
+	</div>
+
+</div>

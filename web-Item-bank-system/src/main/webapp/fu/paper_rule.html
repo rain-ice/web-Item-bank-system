@@ -1,0 +1,56 @@
+
+<form id="form1">
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">试卷标题</label>
+	  <input class="mdui-textfield-input" type="text" name="papername"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">选择题数量</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="singleNum"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">选择题单题分数</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="singleScore"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">填空数量</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="completeNum"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">填空题单空分数</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="completeScore"/>
+	  </div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">判断题数量</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="judgmentNum"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">判断题单题分数</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="judgmentScore"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">问答题数量</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="subjectiveNum"/>
+	</div>
+	<div class="mdui-textfield ">
+	  <label class="mdui-textfield-label">问答题单题分数</label>
+	  <input class="mdui-textfield-input" value=0 type="number" name="subjectiveScore"/>
+	</div>
+	<!-- 选择需要的知识点 -->
+	<p>选择所需要的知识点</p>
+	<div id="pointIds">
+		
+	
+	
+	</div>
+	<select class="mdui-select" name="level">
+		<option value="1" selected>简单</option>
+		<option value="2">普通</option>
+		<option value="3">困难</option>
+	</select>
+	 <input class="mdui-textfield-input" type="hidden"  name="totalMark"/>
+	<input class="mdui-textfield-input" type="hidden" value="0" name="id"/>
+	<input class="mdui-textfield-input" type="hidden" value="0"   name="paperid"/>
+
+</form>
+

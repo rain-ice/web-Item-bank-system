@@ -1,0 +1,10 @@
+<tr >
+	<td class="mdui-table-col-numeric">${id}</td>
+	<td class="mdui-table-col-numeric">${tittle}</td>
+	<td class="mdui-table-col-numeric">${create_date}</td>
+	<td class="mdui-table-col-numeric">
+		<button class="mdui-btn mdui-color-light-green-200" onclick="changeRelease(${id},${releasetype})">${release}</button>
+		<button class="mdui-btn mdui-color-yellow-500" onclick="openPaperRule(${ruleid},${id},'${tittle}')">修改规则</button>
+		<button class="mdui-btn mdui-color-light-blue-200" onclick="searchTestpaper(${id})">试卷内容</button>
+	</td>
+</tr>

@@ -1,0 +1,159 @@
+<div class="mdui-tab"  id="tab" mdui-tab>
+  <a href="#tab1-content" class="mdui-ripple">选择题</a>
+  <a href="#tab2-content" class="mdui-ripple">填空题</a>
+  <a href="#tab3-content" class="mdui-ripple">判断题</a>
+  <a href="#tab4-content"class="mdui-ripple">问答题</a>
+</div>
+<!-- 选择题内容 -->
+<div id="tab1-content" class="mdui-p-a-2">
+<form id="form1" method="post">
+	题目：
+	<div class="mdui-textfield ">
+	  <textarea class="mdui-textfield-input" name="question" placeholder="题目"></textarea>
+	</div>
+	<p>选项A：</p>
+	 <textarea name="answer_a" style="width: 50%;"></textarea>
+	<p>选项B：</p>
+	 <textarea name="answer_b" style="width: 50%;"></textarea>
+	 <p>选项C：</p>
+	 <textarea name="answer_c" style="width: 50%;"></textarea>
+	 <p>选项D：</p>
+	 <textarea name="answer_d" style="width: 50%;"></textarea>
+	<div>
+	答案是：
+		<label class="mdui-radio" style="margin: 25px;">
+		  <input type="radio" name="answer" value="A"/>
+		  <i class="mdui-radio-icon"></i>
+		  A
+		</label>
+		
+		<label class="mdui-radio" style="margin: 25px;">
+		  <input type="radio" name="answer" value="B"/>
+		  <i class="mdui-radio-icon"></i>
+		  B
+		</label>
+		<label class="mdui-radio" style="margin: 25px;">
+		  <input type="radio" name="answer" value="C"/>
+		  <i class="mdui-radio-icon"></i>
+		  C
+		</label>
+		<label class="mdui-radio" style="margin: 25px;">
+		  <input type="radio" name="answer" value="D"/>
+		  <i class="mdui-radio-icon"></i>
+		  D
+		</label>
+	</div>
+	难度选择：
+	<select class="mdui-select" name="glevel">
+		<option value="1" selected>简单</option>
+		<option value="2">普通</option>
+		<option value="3">困难</option>
+	</select>
+	所属知识点：
+	<select class="mdui-select" id="point1" name="pointid">
+
+	</select>
+	<input type="hidden" name="id" value="0">
+	<input type="hidden" name="teacherid">
+	<br>
+	<button type="reset" class="mdui-btn mdui-color-blue-200" style="float: right;" onclick="question_save('1');">保存</button>
+</form>
+</div>
+<!-- 填空题内容 -->
+<div id="tab2-content" class="mdui-p-a-2">
+<form id="form2" method="post">
+	题目：
+	<div class="mdui-textfield ">
+	  <textarea class="mdui-textfield-input" name="question" placeholder="题目"></textarea>
+	</div>
+	答案：
+	<p>第一个空：</p>
+	 <textarea name="answer_a" style="width: 50%;"></textarea>
+	<p>第二个空：</p>
+	 <textarea name="answer_b" style="width: 50%;"></textarea>
+	 <p>第三个空：</p>
+	 <textarea name="answer_c" style="width: 50%;"></textarea>
+	 <p>第四个空：</p>
+	 <textarea name="answer_d" style="width: 50%;"></textarea>
+	
+	难度选择：
+	<select class="mdui-select" name="glevel">
+		<option value="1" selected>简单</option>
+		<option value="2">普通</option>
+		<option value="3">困难</option>
+	</select>
+	所属知识点：
+	<select class="mdui-select" id="point2" name="pointid">
+	</select>
+	<input type="hidden" name="id" value="0">
+	<input type="hidden" name="teacherid">
+	<br>
+	<button type="reset" class="mdui-btn mdui-color-blue-200" style="float: right;" onclick="question_save('2');">保存</button>
+</form>
+</div>
+
+<!-- 判断题内容 -->
+<div id="tab3-content" class="mdui-p-a-2">
+<form id="form3" method="post">
+	题目：
+	<div class="mdui-textfield ">
+	  <textarea class="mdui-textfield-input" name="question" placeholder="题目"></textarea>
+	</div>
+	<div>
+	答案是：
+		<label class="mdui-radio" style="margin: 25px;">
+		  <input type="radio" name="answer" value="是"/>
+		  <i class="mdui-radio-icon"></i>
+		  是
+		</label>
+		
+		<label class="mdui-radio" style="margin: 25px;">
+		  <input type="radio" name="answer" value="否"/>
+		  <i class="mdui-radio-icon"></i>
+		  否
+		</label>
+		
+	</div>
+	难度选择：
+	<select class="mdui-select" name="glevel">
+		<option value="1" selected>简单</option>
+		<option value="2">普通</option>
+		<option value="3">困难</option>
+	</select>
+	所属知识点：
+	<select class="mdui-select" id="point3" name="pointid">
+	</select>
+	<input type="hidden" name="id" value="0">
+	<input type="hidden" name="teacherid">
+	<br>
+	<button type="reset" class="mdui-btn mdui-color-blue-200" style="float: right;" onclick="question_save('3');">保存</button>
+
+</form>
+</div>
+<!-- 问答题内容 -->
+<div id="tab4-content" class="mdui-p-a-2">
+<form id="form4" method="post">
+	题目：
+	<div class="mdui-textfield ">
+	  <textarea class="mdui-textfield-input" name="question" placeholder="题目"></textarea>
+	</div>
+	<div>	
+	<p>答案：</p>
+	 <textarea name="answer" style="width: 50%;height: 300px;"></textarea>
+		
+	</div>
+	难度选择：
+	<select class="mdui-select" name="glevel">
+		<option value="1" selected>简单</option>
+		<option value="2">普通</option>
+		<option value="3">困难</option>
+	</select>
+	所属知识点：
+	<select class="mdui-select" id="point4" name="pointid">
+	</select>
+	<input type="hidden" name="id" value="0">
+	<input type="hidden" name="teacherid">
+	<br>
+	<button type="reset" class="mdui-btn mdui-color-blue-200" style="float: right;" onclick="question_save('3');">保存</button>
+</form>
+</div>
