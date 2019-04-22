@@ -272,6 +272,8 @@ public class DbHelper {
 			}
 		}
 		printSQL(sql);
+
+		
 		Long rst = new Long(0l);
 		
 		if(GlobalUtils.isEmpty(whereSql)) {
@@ -282,7 +284,7 @@ public class DbHelper {
 			else
 				rst = jdbcTemplate.queryForObject(sql, Long.class);
 		}
-		
+		System.out.println(rst.longValue());
 		return rst.longValue();
 	}
 	

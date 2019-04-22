@@ -1,6 +1,6 @@
 package shiyan.table;
 
-public class Dotitle {
+public class Dorecord {
 	
 	private int id;
 	private int studentid;

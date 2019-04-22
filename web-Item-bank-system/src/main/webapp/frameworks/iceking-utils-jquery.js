@@ -258,6 +258,10 @@
 			document.write('<script type="text/javascript" src="'+url+'?'+Math.random()+'"></script>');
 		};
 		
+		var pri_loadCss = function(url){
+			document.write('<link href="'+url+'?'+Math.random()+'" rel="stylesheet">');
+		}
+		
 		//url可以多个，是数组形式
 		var pri_loadJs = function(url){
 			if(Array.isArray(url)){
@@ -349,6 +353,10 @@
 		//加载js文件，带随机数，避免浏览器缓存
 		this.loadJs = function(url){
 			return pri_loadJs(url);
+		};
+		//加载css文件，带随机数，避免浏览器缓存
+		this.loadCss = function(url){
+			return pri_loadCss(url);
 		};
 		
 		//将data数据加载到模板html中，获得新的html

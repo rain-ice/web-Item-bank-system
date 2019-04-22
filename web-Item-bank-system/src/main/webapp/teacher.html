@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>教师主界面</title>
+<link href="frameworks/mdui-v0.4.2/css/mdui.min.css" rel="stylesheet">
+<link href="css/test.css" rel="stylesheet">
+<script src="frameworks/mdui-v0.4.2/js/mdui.min.js"></script>
+<script src="frameworks/jquery/jquery-3.2.1.min.js"></script>
+<script src="frameworks/jquery/jquery.form.js"></script>
+<script src="frameworks/chart.js-2.80/Chart.min.js"></script>
+<script src="frameworks/iceking-utils-jquery.js"></script>
+
+<style>
+
+
+#content-drawer {
+    padding: 10px;
+    /*background: skyblue;
+    font-size: 50px;
+    color:#fff;*/
+}
+
+#content-main {
+    padding: 10px;
+    width: 100%;
+    /*
+    height: 700px;
+    background: tomato;
+    font-size: 50px;
+    color:#fff;*/
+}
+
+#content-footer {
+   box-sizing: border-box;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    line-height: 24px;
+    padding-top: 24px;
+    width: 100%;
+    
+}
+
+</style>
+
+
+<script src="js/sys.js"></script>
+<!-- <script src="js/teacher.js"></script> -->
+<script > jqutils.loadJs('js/teacher.js')</script>
+
+<!-- <script src="js/teacher_home.js"></script> -->
+<script > jqutils.loadJs('js/teacher_home.js')</script>
+<script > jqutils.loadJs('js/teacher_paper.js')</script>
+<script > jqutils.loadJs('js/teacher_question.js')</script>
+<script > jqutils.loadJs('js/teacher_newquestion.js')</script>
+<script > jqutils.loadJs('js/testpaper.js')</script>
+
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo">
+<!-- 上方标题栏 -->
+	<header class="mdui-appbar mdui-appbar-fixed" id="content-header">
+		<div class="mdui-toolbar mdui-color-theme">
+			<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" 
+				mdui-drawer="{target: '#content-drawer', swipe: true}"><i
+				class="mdui-icon material-icons">menu</i></span> 
+				<a href="javascript:;" class="mdui-typo-headline mdui-hidden-xs" id="title_main">教师界面</a> 
+			<div class="mdui-toolbar-spacer"></div>
+			
+				
+			<a href="javascript:;" class="mdui-btn mdui-btn-icon"  mdui-menu="{target: '#geren'}"">
+				<i class="mdui-icon material-icons">&#xe853;</i></a> 
+			<!-- 个人信息menu -->
+			<ul class="mdui-menu" id="geren" style="transform-origin: 100% 0px; position: fixed;">
+				<li class="mdui-menu-item">
+				<a href="javascript:;" class="mdui-ripple footer-menu-item" >个人中心</a>
+				</li>
+				<li class="mdui-menu-item">
+				<a href="javascript:;"  class="mdui-ripple footer-menu-item" >修改密码</a>
+				</li>
+			</ul>
+			
+			<a href="javascript:;" onclick="Logout()" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '退出'}">
+				<i class="mdui-icon material-icons">&#xe15e;</i></a>
+		</div>
+	</header>
+	
+	<!-- 侧边栏 -->
+    <div class="mdui-drawer " id="content-drawer">
+        
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+		  <li class="mdui-list-item mdui-ripple" onclick="loadhtml('teacher_home')">
+		    <i class="mdui-list-item-icon mdui-icon material-icons" >home</i>
+		    <div class="mdui-list-item-content">主页</div>
+		  </li>
+		
+		  <li class="mdui-list-item mdui-ripple" onclick="loadhtml('teacher_paper')">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+		    <div class="mdui-list-item-content">试卷管理</div>
+		    
+		  </li>
+		  <li class="mdui-list-item mdui-ripple" onclick="loadhtml('teacher_question')">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">assignment</i>
+		    <div class="mdui-list-item-content">题库管理</div>
+		    
+		  </li>
+		   <li class="mdui-list-item mdui-ripple" onclick="">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+		    <div class="mdui-list-item-content">审卷</div>
+		  </li>
+		</ul>
+        
+        
+    </div>
+    
+    <!-- 主页面核心内容 -->
+    <div class="mdui-container" id="content-main">
+        
+    </div>
+    
+    <!-- 尾部 -->
+     <div class="mdui-color-theme" id="content-footer">
+    	考试好难啊！
+    </div>
+    
+    <!-- 悬浮框修改密码用 -->
+	<div class="mdui-dialog" id="dialog">
+		<div class="mdui-dialog-title">Are you sure?</div>
+		<div class="mdui-dialog-content" style="height: 400px;">
+		</div>
+		<div class="mdui-dialog-actions">
+			<button class="mdui-btn mdui-ripple">cancel</button>
+			<button class="mdui-btn mdui-ripple" id="teacher_save">保存</button>
+		</div>
+	</div>
+
+</body>
+</html>

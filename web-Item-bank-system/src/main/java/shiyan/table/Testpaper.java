@@ -5,7 +5,22 @@ public class Testpaper {
 	private int teacherid;
 	private int paperid;
 	private int questionid;
-	private int questiontype;
+	private double score;
+	private Question question;
+	
+
+	public Question getQuestion() {
+		return question;
+	}
+	public void setQuestion(Question question) {
+		this.question = question;
+	}
+	public double getScore() {
+		return score;
+	}
+	public void setScore(double score) {
+		this.score = score;
+	}
 	public int getId() {
 		return id;
 	}
@@ -30,17 +45,13 @@ public class Testpaper {
 	public void setQuestionid(int questionid) {
 		this.questionid = questionid;
 	}
-	public int getQuestiontype() {
-		return questiontype;
-	}
-	public void setQuestiontype(int questiontype) {
-		this.questiontype = questiontype;
-	}
 	@Override
 	public String toString() {
 		return "Testpaper [id=" + id + ", teacherid=" + teacherid + ", paperid=" + paperid + ", questionid="
-				+ questionid + ", questiontype=" + questiontype + "]";
+				+ questionid + "]";
 	}
+
+	
 	
 	
 

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>主界面</title>
+<link rel="shortcut icon" href="uploadfiles/pictures/logoo.ico">
+<!-- 页面删除的地方的图标	 -->
+<link href="frameworks/mdui-v0.4.2/css/mdui.min.css" rel="stylesheet">
+<script src="frameworks/mdui-v0.4.2/js/mdui.min.js"></script>
+<script src="frameworks/jquery/jquery-3.2.1.min.js"></script>
+<script src="frameworks/jquery/jquery.form.js"></script>
+<script src="frameworks/chart.js-2.80/Chart.min.js"></script>
+<script src="frameworks/iceking-utils-jquery.js"></script>
+
+<style>
+
+
+#content-drawer {
+    padding: 10px;
+    /*background: skyblue;
+    font-size: 50px;
+    color:#fff;*/
+}
+
+#content-main {
+    padding: 10px;
+    width: 100%;
+    /*
+    height: 700px;
+    background: tomato;
+    font-size: 50px;
+    color:#fff;*/
+}
+
+#content-footer {
+    padding: 20px;
+}
+
+</style>
+
+
+<script src="js/sys.js"></script>
+<!-- <script src="js/student.js"></script> -->
+<script > jqutils.loadJs('js/student.js')</script>
+
+<!-- <script src="js/student_home.js"></script> -->
+<script > jqutils.loadJs('js/student_home.js')</script>
+<script > jqutils.loadJs('js/testpaper.js')</script>
+
+
+</head>
+<body	class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo">
+	<!-- 上方标题栏 -->
+	<header class="mdui-appbar mdui-appbar-fixed" id="content-header">
+		<div class="mdui-toolbar mdui-color-theme">
+			<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" 
+				mdui-drawer="{target: '#content-drawer', swipe: true}"><i
+				class="mdui-icon material-icons">menu</i></span> 
+				<a href="javascript:;" class="mdui-typo-headline mdui-hidden-xs" id="title_main">学生界面</a> 
+			<div class="mdui-toolbar-spacer"></div>
+			
+				
+			<a href="javascript:;" class="mdui-btn mdui-btn-icon"  mdui-menu="{target: '#geren'}"">
+				<i class="mdui-icon material-icons">&#xe853;</i></a> 
+			<!-- 个人信息menu -->
+			<ul class="mdui-menu" id="geren" style="transform-origin: 100% 0px; position: fixed;">
+				<li class="mdui-menu-item">
+				<a href="javascript:;" class="mdui-ripple footer-menu-item">个人中心</a>
+				</li>
+				<li class="mdui-menu-item">
+				<a href="javascript:;"  class="mdui-ripple footer-menu-item">修改密码</a>
+				</li>
+			</ul>
+			
+			<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '退出'}">
+				<i class="mdui-icon material-icons">&#xe15e;</i></a>
+		</div>
+	</header>
+	
+	<!-- 侧边栏 -->
+    <div class="mdui-drawer" id="content-drawer">
+        
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+		  <li class="mdui-list-item mdui-ripple" onclick="home()">
+		    <i class="mdui-list-item-icon mdui-icon material-icons" >home</i>
+		    <div class="mdui-list-item-content">主页</div>
+		  </li>
+		
+		  <li class="mdui-list-item mdui-ripple" onclick="mistakes()">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+		    <div class="mdui-list-item-content">错题集</div>
+		    
+		  </li>
+		   <li class="mdui-list-item mdui-ripple" onclick="mistakes()">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
+		    <div class="mdui-list-item-content">错题集</div>
+		    
+		  </li>
+		
+		  <li class="mdui-collapse-item mdui-collapse-item-open">
+		    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+		      <i class="mdui-list-item-icon mdui-icon material-icons">people</i>
+		      <div class="mdui-list-item-content">Audience</div>
+		      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+		    </div>
+		    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+		      <li class="mdui-list-item mdui-ripple">Overview</li>
+		      <li class="mdui-list-item mdui-ripple">Language</li>
+		      <li class="mdui-list-item mdui-ripple">Location</li>
+		      <li class="mdui-list-item mdui-ripple">New vs Returning</li>
+		    </ul>
+		  </li>
+		
+		  <li class="mdui-collapse-item">
+		    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+		      <i class="mdui-list-item-icon mdui-icon material-icons">device_hub</i>
+		      <div class="mdui-list-item-content">Acquisition</div>
+		      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+		    </div>
+		    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+		      <li class="mdui-list-item mdui-ripple">Overview</li>
+		      <li class="mdui-list-item mdui-ripple">All Traffic</li>
+		      <li class="mdui-list-item mdui-ripple">Direct Traffic</li>
+		      <li class="mdui-list-item mdui-ripple">Search Overview</li>
+		    </ul>
+		  </li>
+		
+		  <li class="mdui-collapse-item">
+		    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+		      <i class="mdui-list-item-icon mdui-icon material-icons">touch_app</i>
+		      <div class="mdui-list-item-content">Behavior</div>
+		      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+		    </div>
+		    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+		      <li class="mdui-list-item mdui-ripple">Overview</li>
+		      <li class="mdui-list-item mdui-ripple">All Pages</li>
+		      <li class="mdui-list-item mdui-ripple">Landing Pages</li>
+		      <li class="mdui-list-item mdui-ripple">Exit Pages</li>
+		    </ul>
+		  </li>
+		
+		  <li class="mdui-list-item mdui-ripple">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">shopping_cart</i>
+		    <div class="mdui-list-item-content">Ecommerce</div>
+		  </li>
+		
+		</ul>
+        
+        
+    </div>
+    
+    <!-- 主页面核心内容 -->
+    <div class="mdui-container" id="content-main">
+        
+    </div>
+    
+    <!-- 尾部 -->
+     <div class="mdui-color-theme" id="content-footer">
+    Copyright
+    </div>
+</body>
+</html>

@@ -24,7 +24,8 @@ public class Userdao {
 			return null;
 		
 		String sql = "select * from Tuser where username='"+username+"'";
-		sql += " and password='"+GlobalUtils.md5Encode(password)+"'";
+		//sql += " and password='"+GlobalUtils.md5Encode(password)+"'";
+		sql += " and password='"+password+"'";
 		System.out.println(sql);
 		Tuser user = dbHelper.query(Tuser.class, sql);
 		

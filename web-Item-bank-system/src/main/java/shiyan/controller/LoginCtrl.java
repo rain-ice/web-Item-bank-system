@@ -23,7 +23,7 @@ import shiyan.table.Tuser;
 
 @RestController
 public class LoginCtrl{
-	private HttpServletRequest request;
+	@Autowired protected HttpServletRequest request;
 	@Autowired private DbHelper dbhelper;
 	/**
 	 * 登录过程
@@ -31,7 +31,7 @@ public class LoginCtrl{
 	 * @return
 	 * @throws Exception
 	 */
-    @RequestMapping(value="/LoginCtrl.login")
+    @RequestMapping(value="/LoginCtrl.login",method=RequestMethod.POST)
     public  String  login(Tuser tuser)throws Exception {
     	
 		Tuser loginUser = Userdao.findUser(tuser.getUsername(), tuser.getPassword(), dbhelper);
@@ -43,6 +43,7 @@ public class LoginCtrl{
 			
 			return json.toString();
 		}
+
 		json.put("succ", true);
 		request.getSession().setAttribute("loginUser", loginUser);
         return json.toString();

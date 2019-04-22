@@ -1,5 +1,14 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
+encoding//src/main/webapp/fu/pointsfu.html=UTF-8
+encoding//src/main/webapp/fu/student_home.html=UTF-8
+encoding//src/main/webapp/fu/student_mistakes.html=UTF-8
+encoding//src/main/webapp/fu/teacher_home.html=UTF-8
+encoding//src/main/webapp/fu/teacher_question.html=UTF-8
+encoding//src/main/webapp/list/teacher_question1.html=UTF-8
+encoding//src/main/webapp/list/teacher_question2.html=UTF-8
+encoding//src/main/webapp/list/teacher_question3.html=UTF-8
+encoding//src/main/webapp/list/teacher_question4.html=UTF-8
 encoding//src/test/java=UTF-8
 encoding/<project>=UTF-8
