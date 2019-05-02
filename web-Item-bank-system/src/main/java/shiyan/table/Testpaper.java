@@ -2,7 +2,7 @@ package shiyan.table;
 
 public class Testpaper {
 	private int id;
-	private int teacherid;
+	
 	private int paperid;
 	private int questionid;
 	private double score;
@@ -27,12 +27,7 @@ public class Testpaper {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getTeacherid() {
-		return teacherid;
-	}
-	public void setTeacherid(int teacherid) {
-		this.teacherid = teacherid;
-	}
+
 	public int getPaperid() {
 		return paperid;
 	}
@@ -47,8 +42,8 @@ public class Testpaper {
 	}
 	@Override
 	public String toString() {
-		return "Testpaper [id=" + id + ", teacherid=" + teacherid + ", paperid=" + paperid + ", questionid="
-				+ questionid + "]";
+		return "Testpaper [id=" + id + ", paperid=" + paperid + ", questionid=" + questionid + ", score=" + score
+				+ ", question=" + question + "]";
 	}
 
 	

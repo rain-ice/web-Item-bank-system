@@ -38,7 +38,17 @@ var searchTestpaper = function(id) {
 	var model = jqutils.loadJson("TestpaperCtrl.presave",{paperid:id});
 //	获取试卷数据跳转到相关页面
 	loadhtml('testpaper');
-	testpapersys(model);
+	testpapersys(model,id);
+}
+
+
+//加载相关主页
+var loadhtml = function(url){
+	var htm = 'fu/'+url+'.html';
+	console.log(url);
+	var html = jqutils.loadHtml(htm);
+	$('#content-main').html(html);
+
 }
 
 

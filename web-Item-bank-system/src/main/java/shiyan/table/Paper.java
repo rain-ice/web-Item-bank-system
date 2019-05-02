@@ -9,6 +9,14 @@ public class Paper {
 	private int automark;
 	private String create_date;
 	private Rule rule;
+	private Tuser tuser;
+	
+	public Tuser getTuser() {
+		return tuser;
+	}
+	public void setTuser(Tuser tuser) {
+		this.tuser = tuser;
+	}
 	public int getId() {
 		return id;
 	}

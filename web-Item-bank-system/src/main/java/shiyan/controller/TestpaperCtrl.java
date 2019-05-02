@@ -55,23 +55,30 @@ public class TestpaperCtrl {
 		
 		return jsonArray.toString();
 	}
-	
+	/**
+	 * 学生查询试卷
+	 * @param page
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping(value="TestpaperCtrl.studentSearch",method=RequestMethod.POST)
-	public String studentsearch()throws Exception{
-		
-		Pagination<Paper> pagination = new Pagination<>(1, 10);
+	public String studentsearch(int page)throws Exception{
 		loginUser = (Tuser)request.getSession().getAttribute("loginUser");
-		
-		pagination.appendWhere("where teacherid = "+loginUser.getId()+" and releasetype=1");
+		Pagination<Paper> pagination = new Pagination<>(page, 10);
+
+		//不能查看已经做过的试卷
+		pagination.appendWhere("where releasetype=1"
+				+ " and id not in (select paperid from dopaper where studentid = "+loginUser.getId()+")");
 		//查询Paper主表
 		pagination = dbHelper.search(Paper.class, pagination);
 		List<Paper> papers = pagination.getRows();
 		//存入相关数据
 		for(Paper paper :papers) {
 			paper.setRule(dbHelper.findByPK(Rule.class, paper.getRuleid()));
+			paper.setTuser(dbHelper.findByPK(Tuser.class, paper.getTeacherid()));
 		}
 		JSONArray jsonArray = JSONArray.fromObject(papers);
-		
+		System.out.println(jsonArray.toString());
 		return jsonArray.toString();
 	}
 	/**
@@ -155,8 +162,8 @@ public class TestpaperCtrl {
         }*/
         //使用jdbc直接插入多条数据
         JdbcTemplate jdbcTemplate = dbHelper.getJdbcTemplate();
-        String sqlString="insert into testpaper(teacherid,paperid,questionid,score) value("
-        		+ loginUser.getId()+","+paper.getId()+",?,?)";
+        String sqlString="insert into testpaper(paperid,questionid,score) value("
+        		+paper.getId()+",?,?)";
         
         List<Object[]> params = new ArrayList<>();
         for(Question question : resultPaper.getQuestionList()) {

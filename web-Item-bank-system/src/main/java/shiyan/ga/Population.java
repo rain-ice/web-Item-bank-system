@@ -101,16 +101,7 @@ public class Population {
 	            return;
 	        }
 		Question tmpQuestion;
-/*		for (int j = 0; j < qustionNum; j++) {
-            int index = random.nextInt(questions.size() - j);
-            // 初始化分数
-            questions.get(index).setScore(score);
-            paper.addQuestion(questions.get(index));
-            // 保证不会重复添加试题
-            tmpQuestion = questions.get(questions.size() - j - 1);
-            questions.set(questions.size() - j - 1,questions.get(index));
-            questions.set(index,tmpQuestion);
-        }*/
+
 		int k=0,j=0;//k总共的计分点，i代表有几个元素加入了试卷中
 		while(k<qustionNum) {
 			int index = random.nextInt(questions.size() - j);
@@ -126,7 +117,6 @@ public class Population {
             tmpQuestion = questions.get(questions.size() - j - 1);
             questions.set(questions.size() - j - 1,questions.get(index));
             questions.set(index,tmpQuestion);
-           
             j++;
 		}
 		

@@ -1,0 +1,405 @@
+[ INFO ] [2019-04-30 14:00:34] shiyan.Start [50] - Starting Start on anstar-PC with PID 5888 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-04-30 14:00:34] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-04-30 14:00:34] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68c356a0: startup date [Tue Apr 30 14:00:34 CST 2019]; root of context hierarchy
+[ INFO ] [2019-04-30 14:00:40] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-04-30 14:00:40] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-04-30 14:00:40] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-04-30 14:00:40] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-04-30 14:00:40] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;D:\apache-maven-3.5.3\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\eclipse;;.]
+[ INFO ] [2019-04-30 14:00:41] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-04-30 14:00:41] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-04-30 14:00:41] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 7202 ms
+[ INFO ] [2019-04-30 14:00:41] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-04-30 14:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-04-30 14:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-04-30 14:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-04-30 14:00:41] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-04-30 14:00:42] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68c356a0: startup date [Tue Apr 30 14:00:34 CST 2019]; root of context hierarchy
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.save],methods=[POST]}" onto public java.lang.String shiyan.controller.DopaperCtrl.save(java.lang.String,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.teacher_search],methods=[POST]}" onto public java.lang.String shiyan.controller.DopaperCtrl.teachersearch(int,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.student_search],methods=[POST]}" onto public java.lang.String shiyan.controller.DopaperCtrl.studentsearch(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.presave]}" onto public java.lang.String shiyan.controller.DopaperCtrl.presave() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.del]}" onto public java.lang.String shiyan.controller.DopaperCtrl.del() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/LoginCtrl.login],methods=[POST]}" onto public java.lang.String shiyan.controller.LoginCtrl.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/LoginCtrl.getlogin]}" onto public java.lang.String shiyan.controller.LoginCtrl.getLoginUser() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/LoginCtrl.outlogin]}" onto public java.lang.String shiyan.controller.LoginCtrl.logout() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.all]}" onto public java.lang.String shiyan.controller.PointsCtrl.all() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.save]}" onto public java.lang.String shiyan.controller.PointsCtrl.save() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.search]}" onto public java.lang.String shiyan.controller.PointsCtrl.search() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.presave]}" onto public java.lang.String shiyan.controller.PointsCtrl.presave() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.del]}" onto public java.lang.String shiyan.controller.PointsCtrl.del() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.all],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.all() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.save],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.save(shiyan.table.Question) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.search],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.search(shiyan.model.QustionModel) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.presave],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.presave(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.del],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.del(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/RuleCtrl.presave],methods=[POST]}" onto public java.lang.String shiyan.controller.RuleCtrl.presave(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.save],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.save(java.lang.String,shiyan.table.Rule,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.teacherSearch],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.teachersearch() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.studentSearch],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.studentsearch(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.presave],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.presave(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.del],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.del(java.lang.Integer[]) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.changeRelease],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.changeRelease(int,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.save]}" onto public java.lang.String shiyan.controller.TuserCtrl.save() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.search]}" onto public java.lang.String shiyan.controller.TuserCtrl.search() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.presave]}" onto public java.lang.String shiyan.controller.TuserCtrl.presave() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.del]}" onto public java.lang.String shiyan.controller.TuserCtrl.del() throws java.lang.Exception
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-04-30 14:00:43] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-04-30 14:00:43] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [56] - Adding welcome page: ServletContext resource [/index.html]
+[ INFO ] [2019-04-30 14:00:44] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-04-30 14:00:44] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-04-30 14:00:44] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-04-30 14:00:44] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-04-30 14:00:44] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-04-30 14:00:44] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-04-30 14:00:44] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-04-30 14:00:44] shiyan.Start [59] - Started Start in 12.854 seconds (JVM running for 18.08)
+[ INFO ] [2019-04-30 14:01:58] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-04-30 14:01:58] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-04-30 14:01:58] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
+[ INFO ] [2019-04-30 14:02:01] com.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+[ ERROR] [2019-04-30 14:02:57] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:244)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:884)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ ERROR] [2019-04-30 15:41:54] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at shiyan.controller.TestpaperCtrl.teachersearch(TestpaperCtrl.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:884)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO ] [2019-04-30 16:32:13] shiyan.Start [50] - Starting Start on anstar-PC with PID 8112 (D:\git\web-Item-bank-system\target\classes started by anstar in D:\git\web-Item-bank-system)
+[ INFO ] [2019-04-30 16:32:13] shiyan.Start [654] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-04-30 16:32:14] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [588] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34f842d6: startup date [Tue Apr 30 16:32:14 CST 2019]; root of context hierarchy
+[ INFO ] [2019-04-30 16:32:22] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [91] - Tomcat initialized with port(s): 8080 (http)
+[ INFO ] [2019-04-30 16:32:22] org.apache.coyote.http11.Http11NioProtocol [180] - Initializing ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-04-30 16:32:22] org.apache.catalina.core.StandardService [180] - Starting service [Tomcat]
+[ INFO ] [2019-04-30 16:32:22] org.apache.catalina.core.StandardEngine [180] - Starting Servlet Engine: Apache Tomcat/9.0.2
+[ INFO ] [2019-04-30 16:32:23] org.apache.catalina.core.AprLifecycleListener [180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;D:\apache-maven-3.5.3\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Java\jdk1.8.0_161\jre\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\eclipse;;.]
+[ INFO ] [2019-04-30 16:32:23] org.apache.jasper.servlet.TldScanner [180] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[ INFO ] [2019-04-30 16:32:23] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring embedded WebApplicationContext
+[ INFO ] [2019-04-30 16:32:23] org.springframework.web.context.ContextLoader [296] - Root WebApplicationContext: initialization completed in 9848 ms
+[ INFO ] [2019-04-30 16:32:24] org.springframework.boot.web.servlet.ServletRegistrationBean [187] - Servlet dispatcherServlet mapped to [/]
+[ INFO ] [2019-04-30 16:32:24] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+[ INFO ] [2019-04-30 16:32:24] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[ INFO ] [2019-04-30 16:32:24] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[ INFO ] [2019-04-30 16:32:24] org.springframework.boot.web.servlet.FilterRegistrationBean [245] - Mapping filter: 'requestContextFilter' to: [/*]
+[ INFO ] [2019-04-30 16:32:24] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [588] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34f842d6: startup date [Tue Apr 30 16:32:14 CST 2019]; root of context hierarchy
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.save],methods=[POST]}" onto public java.lang.String shiyan.controller.DopaperCtrl.save(java.lang.String,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.teacher_search],methods=[POST]}" onto public java.lang.String shiyan.controller.DopaperCtrl.teachersearch(int,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.student_search],methods=[POST]}" onto public java.lang.String shiyan.controller.DopaperCtrl.studentsearch(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.presave]}" onto public java.lang.String shiyan.controller.DopaperCtrl.presave() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/DopaperCtrl.del]}" onto public java.lang.String shiyan.controller.DopaperCtrl.del() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/LoginCtrl.getlogin]}" onto public java.lang.String shiyan.controller.LoginCtrl.getLoginUser() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/LoginCtrl.outlogin]}" onto public java.lang.String shiyan.controller.LoginCtrl.logout() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/LoginCtrl.login],methods=[POST]}" onto public java.lang.String shiyan.controller.LoginCtrl.login(shiyan.table.Tuser) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.all]}" onto public java.lang.String shiyan.controller.PointsCtrl.all() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.save]}" onto public java.lang.String shiyan.controller.PointsCtrl.save() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.search]}" onto public java.lang.String shiyan.controller.PointsCtrl.search() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.presave]}" onto public java.lang.String shiyan.controller.PointsCtrl.presave() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/PointsCtrl.del]}" onto public java.lang.String shiyan.controller.PointsCtrl.del() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.all],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.all() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.save],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.save(shiyan.table.Question) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.search],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.search(shiyan.model.QustionModel) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.presave],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.presave(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/QustionCtrl.del],methods=[POST]}" onto public java.lang.String shiyan.controller.QustionCtrl.del(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/RuleCtrl.presave],methods=[POST]}" onto public java.lang.String shiyan.controller.RuleCtrl.presave(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.save],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.save(java.lang.String,shiyan.table.Rule,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.teacherSearch],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.teachersearch() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.studentSearch],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.studentsearch(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.presave],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.presave(int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.del],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.del(java.lang.Integer[]) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TestpaperCtrl.changeRelease],methods=[POST]}" onto public java.lang.String shiyan.controller.TestpaperCtrl.changeRelease(int,int) throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.save]}" onto public java.lang.String shiyan.controller.TuserCtrl.save() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.search]}" onto public java.lang.String shiyan.controller.TuserCtrl.search() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.presave]}" onto public java.lang.String shiyan.controller.TuserCtrl.presave() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/TuserCtrl.del]}" onto public java.lang.String shiyan.controller.TuserCtrl.del() throws java.lang.Exception
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [550] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-04-30 16:32:25] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-04-30 16:32:25] org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [56] - Adding welcome page: ServletContext resource [/index.html]
+[ INFO ] [2019-04-30 16:32:26] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+[ INFO ] [2019-04-30 16:32:26] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [433] - Registering beans for JMX exposure on startup
+[ INFO ] [2019-04-30 16:32:26] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+[ INFO ] [2019-04-30 16:32:26] org.springframework.jmx.export.annotation.AnnotationMBeanExporter [668] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[ INFO ] [2019-04-30 16:32:26] org.apache.coyote.http11.Http11NioProtocol [180] - Starting ProtocolHandler ["http-nio-8080"]
+[ INFO ] [2019-04-30 16:32:26] org.apache.tomcat.util.net.NioSelectorPool [180] - Using a shared selector for servlet write/read
+[ INFO ] [2019-04-30 16:32:26] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [206] - Tomcat started on port(s): 8080 (http) with context path ''
+[ INFO ] [2019-04-30 16:32:26] shiyan.Start [59] - Started Start in 27.862 seconds (JVM running for 111.196)
+[ INFO ] [2019-04-30 16:32:41] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[ INFO ] [2019-04-30 16:32:41] org.springframework.web.servlet.DispatcherServlet [497] - FrameworkServlet 'dispatcherServlet': initialization started
+[ INFO ] [2019-04-30 16:32:41] org.springframework.web.servlet.DispatcherServlet [512] - FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
+[ INFO ] [2019-04-30 16:32:53] com.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+[ ERROR] [2019-04-30 16:32:59] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:244)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:884)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ ERROR] [2019-04-30 16:38:15] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:244)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:884)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[ ERROR] [2019-04-30 16:40:33] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [182] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'paperid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:244)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:981)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:884)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:858)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)

@@ -57,6 +57,7 @@
 <script > jqutils.loadJs('js/teacher_paper.js')</script>
 <script > jqutils.loadJs('js/teacher_question.js')</script>
 <script > jqutils.loadJs('js/teacher_newquestion.js')</script>
+<script > jqutils.loadJs('js/teacher_mark.js')</script>
 <script > jqutils.loadJs('js/testpaper.js')</script>
 
 </head>
@@ -93,26 +94,21 @@
         
         <ul class="mdui-list" mdui-collapse="{accordion: true}">
 
-		  <li class="mdui-list-item mdui-ripple" onclick="loadhtml('teacher_home')">
+		  <li class="mdui-list-item mdui-ripple" onclick="teacher_home()">
 		    <i class="mdui-list-item-icon mdui-icon material-icons" >home</i>
 		    <div class="mdui-list-item-content">主页</div>
 		  </li>
 		
-		  <li class="mdui-list-item mdui-ripple" onclick="loadhtml('teacher_paper')">
+		  <li class="mdui-list-item mdui-ripple" onclick="teacher_paper()">
 		    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
 		    <div class="mdui-list-item-content">试卷管理</div>
 		    
 		  </li>
-		  <li class="mdui-list-item mdui-ripple" onclick="loadhtml('teacher_question')">
+		  <li class="mdui-list-item mdui-ripple" onclick="teacher_question()">
 		    <i class="mdui-list-item-icon mdui-icon material-icons">assignment</i>
 		    <div class="mdui-list-item-content">题库管理</div>
 		    
 		  </li>
-		   <li class="mdui-list-item mdui-ripple" onclick="">
-		    <i class="mdui-list-item-icon mdui-icon material-icons">class</i>
-		    <div class="mdui-list-item-content">审卷</div>
-		  </li>
-		</ul>
         
         
     </div>

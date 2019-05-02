@@ -1,9 +1,14 @@
 var test_quesitontmpl1,test_quesitontmpl2,test_quesitontmpl3,test_quesitontmpl4;
-var answerResult=[];
+var answerResult;
 var testquestionlist;
 var nowquestion;
-var testpapersys = function(data) {
+var paperid
+//初始化答题界面的时候
+var testpapersys = function(data,paperid) {
 	testquestionlist=data;
+	this.paperid=paperid;
+	console.log(testquestionlist);
+	answerResult = new Array(data.length);
 	if(LoginUser.type==1){
 		$('#submitPaperbtn').remove();
 	}
@@ -32,7 +37,7 @@ var testpapersys = function(data) {
 	}
 	$('#questioncard').html(cardhtml);
 	loadQustion(0);
-	mdui.mutation();
+	
 	
 }
 
@@ -87,22 +92,65 @@ var loadQustion = function(index){
 	//注入监听事件
 	$('input').change(function(){
 		saveAnswer($(this).val(),$(this).attr("name"),index);
-	})
-	
+	});
+	$('textarea').change(function(){
+		saveAnswer($(this).val(),$(this).attr("name"),index);
+	});
+	mdui.mutation();
 }
 //保存记录到数据集合中
 var saveAnswer = function(data,name,index) {
 	var answer={};
-	answer.id=testquestionlist[index].question.id;
-	answer[name]=data;
-
+	if(name!='answer'){
+		$('input').each(function(){
+			if($(this).val()==null){
+				answer[$(this).attr("name")]=""
+			}else{
+				answer[$(this).attr("name")]=$(this).val();
+			}
+		})
+	}else {
+		answer[name]=data;
+	}
+	answer.testpaperid=testquestionlist[index].id;
 	answerResult[index]=answer;
 	$('#questioncard li').eq(index).addClass("mdui-color-amber-300");
 	
 }
 //提交试卷的答案
 var submitPaper = function(){
-	
+	for(var i=0;i<answerResult.length;i++){
+		if(answerResult[i]==null){
+			alert('试卷中还有未完成的题目');
+			return;
+		}
+	}
+	if(!confirm("确定提交？")){
+		return;
+	}
+	data={};
+	data.list=jqutils.obj2json(answerResult);
+	data.paperid=paperid;
+	console.log(data);
+	var result = jqutils.loadJson('DopaperCtrl.save',data);
+	student_paper();
+	answerResult=null;
+}
+
+var nextquestion = function(){
+	if(nowquestion>=testquestionlist.length){
+		return;
+	}
+	nowquestion++;
+	loadQustion(nowquestion);
+}
+
+var prequestion = function(){
+	if(nowquestion<=1){
+		return;
+	}
+	nowquestion--;
+	loadQustion(nowquestion);
 }
 
 

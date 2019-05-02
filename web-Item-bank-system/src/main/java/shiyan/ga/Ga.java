@@ -86,8 +86,6 @@ public class Ga {
      */
     public static PaperModel crossover(DbHelper dbHelper,PaperModel paper1,PaperModel paper2,Rule rule) throws Exception {
     	PaperModel child = new PaperModel();
-
-    	
     	 //获取填空题的数量
         int completeNum = rule.getCompleteNum();
         System.out.println("填空题数量："+completeNum);
@@ -109,11 +107,7 @@ public class Ga {
         	i++;
         }
         //根据两个试卷的差值重新计算i
-        i+=(paper2.getQuestionSize()-paper1.getQuestionSize());
-        System.out.println("i的值"+i);
-        System.out.println("试卷一分数："+paper1.getTotalScore()+" 试卷二的分数："+paper2.getTotalScore());
-        System.out.println("试卷一数量："+paper1.getQuestionSize()+" 试卷二的数量："+paper2.getQuestionSize());
-        
+        i+=(paper2.getQuestionSize()-paper1.getQuestionSize());       
         //防止出现i小于零的情况
         if(i<0) {
         	i=0;
