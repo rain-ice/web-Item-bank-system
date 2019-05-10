@@ -5,6 +5,9 @@ $(function(){
 	var result = jqutils.loadJson('LoginCtrl.getlogin');
 	if(result.succ){
 		LoginUser = result.loginUser;
+		var inst = new mdui.Tooltip('#user', {
+			  content: LoginUser.name
+			});
 	}else{
 		location.href='index.html';
 	}
@@ -33,12 +36,20 @@ var	loadpoints  = function(tmpl,position) {
 }
 
 //跳转到试卷页面
-var searchTestpaper = function(id) {
+var searchTestpaper  = function(id) {
 	
 	var model = jqutils.loadJson("TestpaperCtrl.presave",{paperid:id});
 //	获取试卷数据跳转到相关页面
 	loadhtml('testpaper');
 	testpapersys(model,id);
+}
+
+//跳转到试卷记录的详情页面
+var searchDopaper = function(id) {
+	var model = jqutils.loadJson("DopaperCtrl.presave",{dopaperid:id});
+//	获取试卷数据跳转到相关页面
+	loadhtml('dopaper');
+	dopapersys(model,id);
 }
 
 
@@ -48,8 +59,40 @@ var loadhtml = function(url){
 	console.log(url);
 	var html = jqutils.loadHtml(htm);
 	$('#content-main').html(html);
-
+	deltooltip();
 }
+
+var deltooltip = function() {
+	$('.mdui-tooltip-open').remove();
+}
+
+
+var modifyUser = function() {
+	var inst = new mdui.Dialog('#dialog');
+	$('.mdui-dialog-title').html('修改信息');
+	html=jqutils.loadHtml('list/modifyUserlist.html');
+	$('.mdui-dialog-content').html(html);
+	jqutils.formLoad('form1',LoginUser);
+	inst.open();
+	
+	$('#teacher_save').click(function() {
+		saveUser(inst);
+	});
+}
+
+var saveUser = function(inst){
+	data = jqutils.formData('form1');
+	console.log(data);
+	var reslut = jqutils.loadJson("TuserCtrl.save",data);
+	if(reslut.succ){
+		inst.close();
+	}else{
+		alert(reslut.error);
+	}
+		
+}
+		
+
 
 
 

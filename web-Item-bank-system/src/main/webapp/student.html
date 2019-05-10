@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 
 <title>主界面</title>
-<link rel="shortcut icon" href="uploadfiles/pictures/logoo.ico">
+
 <!-- 页面删除的地方的图标	 -->
 <link href="frameworks/mdui-v0.4.2/css/mdui.min.css" rel="stylesheet">
 <link href="css/test.css" rel="stylesheet">
@@ -51,8 +51,10 @@
 <script > jqutils.loadJs('js/student_home.js')</script>
 <script > jqutils.loadJs('js/student_paper.js')</script>
 <script > jqutils.loadJs('js/student_score.js')</script>
+<script > jqutils.loadJs('js/student_brush.js')</script>
+<script > jqutils.loadJs('js/student_mistakes.js')</script>
 <script > jqutils.loadJs('js/testpaper.js')</script>
-
+<script > jqutils.loadJs('js/dopaper.js')</script>	
 
 </head>
 <body	class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo">
@@ -66,15 +68,12 @@
 			<div class="mdui-toolbar-spacer"></div>
 			
 				
-			<a href="javascript:;" class="mdui-btn mdui-btn-icon"  mdui-menu="{target: '#geren'}"">
+			<a href="javascript:;" class="mdui-btn mdui-btn-icon" id="user"  mdui-menu="{target: '#geren'}"">
 				<i class="mdui-icon material-icons">&#xe853;</i></a> 
 			<!-- 个人信息menu -->
 			<ul class="mdui-menu" id="geren" style="transform-origin: 100% 0px; position: fixed;">
 				<li class="mdui-menu-item">
-				<a href="javascript:;" class="mdui-ripple footer-menu-item">个人中心</a>
-				</li>
-				<li class="mdui-menu-item">
-				<a href="javascript:;"  class="mdui-ripple footer-menu-item">修改密码</a>
+				<a href="javascript:;"  class="mdui-ripple footer-menu-item">修改信息</a>
 				</li>
 			</ul>
 			
@@ -131,5 +130,16 @@
      <div class="mdui-color-theme" id="content-footer">
     Copyright
     </div>
+    
+    <!-- 悬浮框修改密码用 -->
+	<div class="mdui-dialog" id="dialog" >
+		<div class="mdui-dialog-title">Are you sure?</div>
+		<div class="mdui-dialog-content" style="height: 400px;">
+		</div>
+		<div class="mdui-dialog-actions">
+			<button class="mdui-btn mdui-ripple" mdui-dialog-close>cancel</button>
+			<button class="mdui-btn mdui-ripple" id="teacher_save">保存</button>
+		</div>
+	</div>
 </body>
 </html>

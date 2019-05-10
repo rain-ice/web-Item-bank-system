@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 
 <title>登录界面</title>
-<link rel="shortcut icon" href="uploadfiles/pictures/logoo.ico">
-<!-- 页面删除的地方的图标	 -->
+
+<!-- 页面删除的地方的图标	 --> 
 <link href="frameworks/mdui-v0.4.2/css/mdui.min.css" rel="stylesheet">
 <script src="frameworks/mdui-v0.4.2/js/mdui.min.js"></script>
 <script src="frameworks/jquery/jquery-3.2.1.min.js"></script>
@@ -51,14 +51,16 @@
 			  <label class="mdui-textfield-label">请输入用户名</label>
 			  <input class="mdui-textfield-input" type="password" name="password"/>
 			</div>
-			
+			<div class="mdui-textfield">
+			  <button class="mdui-btn mdui-color-amber-300" type="button" style="width: 100%" onclick="login()">登录</button>
+			</div>
 			
 			<br>
 			<div style="float: right;">
-			<button class="mdui-btn mdui-color-amber-300" type="button" onclick="login()">登录</button>		
-			<button class="mdui-btn mdui-color-light-blue-200" type="button" onclick="register()">注册</button>	
+					
+				没有账号？ <a href="#" onclick="register()">注册</a>
 			</div>
-				
+					
 		</form>
 	
 	</div>

@@ -5,7 +5,6 @@ public class Dorecord {
 	private int id;
 	private int studentid;
 	private int questionid;
-	private int type;
 	private int yes;
 	private int no;
 	public int getId() {
@@ -26,12 +25,6 @@ public class Dorecord {
 	public void setQuestionid(int questionid) {
 		this.questionid = questionid;
 	}
-	public int getType() {
-		return type;
-	}
-	public void setType(int type) {
-		this.type = type;
-	}
 	public int getYes() {
 		return yes;
 	}
@@ -44,11 +37,7 @@ public class Dorecord {
 	public void setNo(int no) {
 		this.no = no;
 	}
-	@Override
-	public String toString() {
-		return "Dotitle [id=" + id + ", studentid=" + studentid + ", questionid=" + questionid + ", type=" + type
-				+ ", yes=" + yes + ", no=" + no + "]";
-	}
+
 	
 
 }

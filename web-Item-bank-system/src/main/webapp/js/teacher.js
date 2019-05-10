@@ -7,6 +7,8 @@ $(function() {
 
 var teacher_home = function() {
 	loadhtml('teacher_home');
+	newPaper();
+	doPaperCount();
 	mdui.mutation();
 }
 

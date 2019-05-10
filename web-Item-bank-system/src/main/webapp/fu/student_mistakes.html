@@ -1,2 +1,15 @@
-<script src="js/student_mistakes.js"></script>
-<h1>mistakes</h1>
+<h1>错题集</h1>
+<div class="mdui-panel" mdui-panel="{accordion: true}">
+
+</div>
+<div style="text-align: center;">
+	<button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="mistake_previouspage()" >
+		<i class="mdui-icon material-icons">arrow_back</i>
+	</button>
+	<input id="input_question_page"  type="text" name="page" style="width: 35px;" value="0">
+	<button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="mistake_nextpage()">
+		<i class="mdui-icon material-icons">arrow_forward</i>
+	</button>
+	<span>/<span id="totalpage"></span>页</span>
+
+</div>

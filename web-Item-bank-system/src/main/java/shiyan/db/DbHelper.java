@@ -147,7 +147,11 @@ public class DbHelper {
 	 */
 	public <T> T query(Class<T> cls,String sql)throws Exception{
 		List<T> list = jdbcTemplate.query(sql, new CommRowMapper<T>(cls));
-		T obj = list.get(0);
+		T obj=null; 
+		if(list.size()>0) {
+			obj = list.get(0);
+		}
+		
 		return obj;
 	}
 	

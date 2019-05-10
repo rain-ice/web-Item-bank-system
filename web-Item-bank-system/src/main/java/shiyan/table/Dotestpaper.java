@@ -9,6 +9,14 @@ public class Dotestpaper {
 	private String answer_b;
 	private String answer_c;
 	private String answer_d;
+	private double score;
+	
+	public double getScore() {
+		return score;
+	}
+	public void setScore(double score) {
+		this.score = score;
+	}
 	public int getId() {
 		return id;
 	}

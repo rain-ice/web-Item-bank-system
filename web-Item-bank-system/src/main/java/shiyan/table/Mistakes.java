@@ -4,7 +4,22 @@ public class Mistakes {
 	private int id;
 	private int studentid;
 	private int questionid;
-	private int type;
+	private Question question;
+	private Dorecord dorecord;
+	
+	
+	public Dorecord getDorecord() {
+		return dorecord;
+	}
+	public void setDorecord(Dorecord dorecord) {
+		this.dorecord = dorecord;
+	}
+	public Question getQuestion() {
+		return question;
+	}
+	public void setQuestion(Question question) {
+		this.question = question;
+	}
 	public int getId() {
 		return id;
 	}
@@ -23,16 +38,10 @@ public class Mistakes {
 	public void setQuestionid(int questionid) {
 		this.questionid = questionid;
 	}
-	public int getType() {
-		return type;
-	}
-	public void setType(int type) {
-		this.type = type;
-	}
 	@Override
 	public String toString() {
-		return "Mistakes [id=" + id + ", studentid=" + studentid + ", questionid=" + questionid + ", type=" + type
-				+ "]";
+		return "Mistakes [id=" + id + ", studentid=" + studentid + ", questionid=" + questionid + ", question="
+				+ question + "]";
 	}
 	
 

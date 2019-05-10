@@ -1,5 +1,6 @@
 var teacher_papertmpl;
 var teahcer_testpapertmpl;
+var teacher_paperData={};
 //教师试卷页面初始化
 var teacherpapersys = function(){
 	if(teacher_papertmpl==null){
@@ -10,6 +11,7 @@ var teacherpapersys = function(){
 		teahcer_testpapertmpl= jqutils.loadHtml('list/teacher_testpaperlist.html');
 		
 	}
+	teacher_paperData.page=1;
 	teacher_searchPaper();
 	
 	mdui.mutation();
@@ -17,16 +19,22 @@ var teacherpapersys = function(){
 //查询试卷
 var teacher_searchPaper = function(){
 	$('.mdui-table-cell-checkbox').remove();
-	var model = jqutils.loadJson('TestpaperCtrl.teacherSearch',null);
+	var model = jqutils.loadJson('TestpaperCtrl.teacherSearch',teacher_paperData);
+	console.log(model);
 	var html =  "";
-	for(var i=0;i<model.length;i++){
-		if(model[i].releasetype){
-			model[i].release='发布中';
+	for(var i=0;i<model.rows.length;i++){
+		if(model.rows[i].releasetype){
+			model.rows[i].release='发布中';
 		}else {
-			model[i].release='发布';
+			model.rows[i].release='发布';
 		}
-		html+=jqutils.tmpl(teacher_papertmpl,model[i]);
+		html+=jqutils.tmpl(teacher_papertmpl,model.rows[i]);
 	}
+	teacher_paperData.totalpage = model.totalpage;
+	teacher_paperData.page = model.page;
+	$('input[name=page]').val(model.page);
+	$('#totalpage').text(model.totalpage);
+	
 	$('#teacher_papertab').html(html);
 	
 	mdui.updateTables();
@@ -38,7 +46,7 @@ var teacher_searchPaper = function(){
 //打开对话框
 var openPaperRule = function(id,paperid,papername) {
 	
-	var inst = new mdui.Dialog('#dialog');
+	var inst = new mdui.Dialog('#dialog',{overlay: false});
 	
 	$('.mdui-dialog-title').html('组卷规则 <div style="float:right">总分：<span id="totalMark"></span></div>');
 	html=jqutils.loadHtml('fu/paper_rule.html');
@@ -87,21 +95,17 @@ var totalMark = function(){
 	var subjectiveNum = $('input[name=subjectiveNum]').val();
 	var subjectiveScore = $('input[name=subjectiveScore]').val();
 	var totalMark=0;
-	console.log(totalMark);
 	    totalMark+=singleNum*singleScore;
-	    console.log(totalMark);
 		totalMark+=JudgmentNum*JudgmentScore;
-		console.log(totalMark);
 		totalMark+=completeNum*completeScore;
-		console.log(totalMark);
 		totalMark+=subjectiveNum*subjectiveScore;//计算当前总分
-		console.log(totalMark);
 	$('input[name=totalMark]').val(totalMark);
 	$('#totalMark').text(totalMark);
 }
 
 //上传规则获得试卷
 var teacher_saverule = function() {
+
 	if(!confirm("确定生成试卷？")){
 		return;
 	}
@@ -117,10 +121,12 @@ var teacher_saverule = function() {
 	});
 	
 	data.pointIds=pointIds;
-	console.log(data);
 	var reslut = jqutils.loadJson("TestpaperCtrl.save",data);
-	console.log(reslut);
-	
+	if(reslut.succ){
+			$('#dialog').removeClass('mdui-dialog-open');
+	}else{
+		alert('创建失败')
+	}	
 }
 //删除试卷，可以多选择一起删除
 var delPaper = function() {
@@ -163,6 +169,26 @@ var changeRelease = function(id,type) {
 		alert(reslut.error);
 	}
 
+}
+
+//下一页
+var paper_nextpage = function(){
+	console.log(question_data);
+	if(teacher_paperData.page>=teacher_paperData.totalpage){
+		return;
+	}
+
+	teacher_paperData.page=teacher_paperData.page+1;
+	teacher_searchPaper();
+	
+}
+//上一页
+var paper_previouspage = function() {
+	if(teacher_paperData.page<=1){
+		return;
+	}
+	teacher_paperData.page=teacher_paperData.page-1;
+	teacher_searchPaper();
 }
 
 

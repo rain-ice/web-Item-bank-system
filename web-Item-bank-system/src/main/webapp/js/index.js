@@ -12,6 +12,7 @@ var login = function(){
 		jqutils.formItem('password','form1').focus();
 		return;	
 	}
+	
 
 	var result=jqutils.loadJson('LoginCtrl.login',data);
 	if(result.succ){
@@ -31,6 +32,8 @@ var login = function(){
 			}	
 		}
 
+	}else{
+		alert(result.error);
 	}
 }
 

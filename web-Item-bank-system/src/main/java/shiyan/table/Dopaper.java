@@ -1,5 +1,9 @@
 package shiyan.table;
 
+import java.util.List;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+
 public class Dopaper {
 	private int id;
 	private int studentid;
@@ -8,6 +12,29 @@ public class Dopaper {
 	private String create_date;
 	private int type;
 	private Paper paper;
+	private List<Dotestpaper> dotestpapers;
+	private List<Testpaper> testpapers;
+	protected String studentName;
+	
+	
+	public List<Testpaper> getTestpapers() {
+		return testpapers;
+	}
+	public void setTestpapers(List<Testpaper> testpapers) {
+		this.testpapers = testpapers;
+	}
+	public List<Dotestpaper> getDotestpapers() {
+		return dotestpapers;
+	}
+	public void setDotestpapers(List<Dotestpaper> dotestpapers) {
+		this.dotestpapers = dotestpapers;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
 	public int getId() {
 		return id;
 	}

@@ -1,11 +1,28 @@
 <style>
-.button-student-tittle{
-height: 100px;
+.home_div{
+height: 600px;
+width:100%;
+text-align:center;
 font-size: 20px;
-margin: 20px
+line-height: 600px;
 }
 </style>
-<div class="chart-container" style="position: relative; height:400px; width:600px">
+<div class="home_div">
+<a style="margin:50px;" mdui-tooltip="{content: '开始做试卷'}" href="javascript:;" onclick="student_paper()">
+	<img alt="" src="img/stu-dashboard-icon1.png">
+</a>
+<a style="margin:50px;" mdui-tooltip="{content: '做题'}" href="javascript:;"  onclick="student_brush()">
+	<img alt="" src="img/stu-dashboard-icon3.png">
+</a>
+<a style="margin:50px;" mdui-tooltip="{content: '错题集'}" href="javascript:;"  onclick="student_mistakes()">
+	<img alt="" src="img/stu-dashboard-icon4.png">
+</a>
+
+</div>
+
+
+
+<div class="chart-container" style="position: relative;">
     <canvas id="myChart"></canvas>
 </div>
 

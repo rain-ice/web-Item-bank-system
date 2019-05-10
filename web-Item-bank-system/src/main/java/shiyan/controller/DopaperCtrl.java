@@ -61,6 +61,11 @@ public class DopaperCtrl {
 		pagination_dopaper.appendWhere(where_dopaper);
 		pagination_dopaper.appendOrderBy("order by create_date desc");
 		pagination_dopaper = dbHelper.search(Dopaper.class, pagination_dopaper);
+		if(pagination_dopaper.getTotal()>0) {
+		for(Dopaper dopaper:pagination_dopaper.getRows()) {
+			dopaper.setStudentName(dbHelper.findByPK(Tuser.class, dopaper.getStudentid()).getName());
+		}
+		}
 		JSONObject jsonObject = JSONObject.fromObject(pagination_dopaper);
 		
 		return jsonObject.toString();
@@ -92,10 +97,51 @@ public class DopaperCtrl {
 	 * @return 返回单个的相关信息
 	 * @throws Exception
 	 */
-	@RequestMapping(value="DopaperCtrl.presave")
-	public String presave()throws Exception{
-		return "操作之前的检索";
+	@RequestMapping(value="DopaperCtrl.presave",method=RequestMethod.POST)
+	public String presave(int dopaperid)throws Exception{
+		System.out.println(dopaperid);
+		Dopaper dopaper = dbHelper.findByPK(Dopaper.class, dopaperid);
+		Pagination<Testpaper> pagination_testpaper = new Pagination<Testpaper>();
+		pagination_testpaper.appendWhere("where paperid = "+dopaper.getPaperid());
+		pagination_testpaper = dbHelper.search(Testpaper.class, pagination_testpaper);
+		for(Testpaper testpaper:pagination_testpaper.getRows()) {
+			testpaper.setQuestion(dbHelper.findByPK(Question.class, testpaper.getQuestionid()));
+		}
+		
+		dopaper.setTestpapers(pagination_testpaper.getRows());
+		Pagination<Dotestpaper> pagination_dotestpaper = new Pagination<Dotestpaper>();
+		pagination_dotestpaper.appendWhere("where dopaperid = "+dopaperid);
+		
+		dopaper.setDotestpapers(dbHelper.search(Dotestpaper.class, pagination_dotestpaper).getRows());
+		JSONObject jsonObject = JSONObject.fromObject(dopaper);		
+		return jsonObject.toString();
 	}
+	
+	@RequestMapping(value="DopaperCtrl.marksave",method=RequestMethod.POST)
+	public String marksave(String list,int dopaperid)throws Exception{
+		System.out.println(dopaperid);
+		System.out.println(list);
+		JSONArray jsonArray = JSONArray.fromObject(list);
+		List<Object[]> params = new ArrayList<>();
+		List<Dotestpaper> dotestpapers = JSONArray.toList(jsonArray, new Dotestpaper(), new JsonConfig());
+		String sqlString="update dotestpaper set score=? where id=?";
+		double total=0;
+		JdbcTemplate jdbcTemplate = dbHelper.getJdbcTemplate();
+		
+		for(Dotestpaper dotestpaper:dotestpapers) {
+			total+=dotestpaper.getScore();
+			params.add(new Object[]{dotestpaper.getScore(),dotestpaper.getId()});
+		}
+		jdbcTemplate.batchUpdate(sqlString, params);
+		jdbcTemplate.update("update dopaper set type=0,score="+total+" where id="+dopaperid);
+		
+		
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.put("succ", true);
+		return jsonObject.toString();
+	}
+	
+	
 	/**
 	 * 增加或者修改操作（insert或者是update）
 	 * @return 操作是否正确执行
@@ -105,9 +151,7 @@ public class DopaperCtrl {
 	public String save(String list,int paperid)throws Exception{
 		
 		Tuser tuser = (Tuser) request.getSession().getAttribute("loginUser");
-		System.out.println(tuser.toString());
 		JSONArray jsonArray = JSONArray.fromObject(list);
-		System.out.println(jsonArray.toString());
 		List<Dotestpaper> dotestpapers = JSONArray.toList(jsonArray, new Dotestpaper(), new JsonConfig());
 		double total=0;
 		
@@ -123,16 +167,17 @@ public class DopaperCtrl {
 		//创建需要inert的数组
 		List<Object[]> params = new ArrayList<>();
 		JdbcTemplate jdbcTemplate = dbHelper.getJdbcTemplate();
-		String sqlString="insert into dotestpaper(dopaperid,testpaperid,answer,answer_a,answer_b,answer_c,answer_d) value("
-        		+ dopaper.getId()+",?,?,?,?,?,?)";
+		String sqlString="insert into dotestpaper(dopaperid,testpaperid,answer,answer_a,answer_b,answer_c,answer_d,score) value("
+        		+ dopaper.getId()+",?,?,?,?,?,?,?)";
         
 		System.out.println("当前位置数量："+dotestpapers.size());
 		for(Dotestpaper dotestpaper:dotestpapers) {
 			dotestpaper.setId(0);
 			dotestpaper.setDopaperid(dopaper.getId());
-			total+=ProofreadingQuestion(dotestpaper);
+			double score=ProofreadingQuestion(dotestpaper);
+			total+=score;
 			params.add(new Object[]{dotestpaper.getTestpaperid(),dotestpaper.getAnswer(),
-					dotestpaper.getAnswer_a(),dotestpaper.getAnswer_b(),dotestpaper.getAnswer_c(),dotestpaper.getAnswer_d()});
+					dotestpaper.getAnswer_a(),dotestpaper.getAnswer_b(),dotestpaper.getAnswer_c(),dotestpaper.getAnswer_d(),score});
 			
 		}
 		
@@ -157,6 +202,8 @@ public class DopaperCtrl {
 	public String del()throws Exception{
 		return "删除操作";
 	}
+	
+	
 	/**
 	 * 计算出分数并返回，同时存储信息到副表中
 	 * @param dotestpaper

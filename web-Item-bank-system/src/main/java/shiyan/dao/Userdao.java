@@ -27,7 +27,8 @@ public class Userdao {
 		//sql += " and password='"+GlobalUtils.md5Encode(password)+"'";
 		sql += " and password='"+password+"'";
 		System.out.println(sql);
-		Tuser user = dbHelper.query(Tuser.class, sql);
+		Tuser user = null; 
+		user = dbHelper.query(Tuser.class, sql);
 		
 		return user;
 

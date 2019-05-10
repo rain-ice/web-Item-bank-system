@@ -7,8 +7,8 @@
 var student_home = function() {
 	loadhtml('student_home');
 	
-	var number =  showMistakesNumber();
-	$('#mistakesnumber').text(number);
+
+
 	var model = jqutils.loadJson('DopaperCtrl.student_search',{page:1});
 	console.log(model);
 	var score=[];
@@ -26,20 +26,12 @@ var student_paper = function(){
 	
 }
 
-/*显示错题集中题目数量*/
-var showMistakesNumber = function() {
-	var number=jqutils.loadJson('MistakesCtrl.shownumber',{id:LoginUser.id});
-	return number;
-}
-
-
-
-
 
 
 /*错题集相关内容*/
 var student_mistakes = function() {
 	loadhtml('student_mistakes');
+	studentmistakesys();
 }
 
 /*查看成绩*/
@@ -51,10 +43,9 @@ var student_score = function() {
 /*刷题*/
 var student_brush = function() {
 	loadhtml('student_brush');
+	studentbrushsys();
 }
 
-
-/*根据题型测试*/
 
 
 

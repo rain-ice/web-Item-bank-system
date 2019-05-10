@@ -21,6 +21,7 @@ import shiyan.ga.Ga;
 import shiyan.ga.Population;
 import shiyan.model.PaperModel;
 import shiyan.sys.Mydate;
+import shiyan.table.Dopaper;
 import shiyan.table.Paper;
 import shiyan.table.Question;
 import shiyan.table.Rule;
@@ -38,9 +39,10 @@ public class TestpaperCtrl {
 	 * @throws Exception
 	 */
 	@RequestMapping(value="TestpaperCtrl.teacherSearch",method=RequestMethod.POST)
-	public String teachersearch()throws Exception{
+	public String teachersearch(int page)throws Exception{
 		
 		Pagination<Paper> pagination = new Pagination<>(1, 10);
+		pagination.setPage(page);
 		loginUser = (Tuser)request.getSession().getAttribute("loginUser");
 		
 		pagination.appendWhere("where teacherid = "+loginUser.getId());
@@ -48,12 +50,12 @@ public class TestpaperCtrl {
 		pagination = dbHelper.search(Paper.class, pagination);
 		List<Paper> papers = pagination.getRows();
 		//存入相关数据
-		for(Paper paper :papers) {
+		for(Paper paper :pagination.getRows()) {
 			paper.setRule(dbHelper.findByPK(Rule.class, paper.getRuleid()));
 		}
-		JSONArray jsonArray = JSONArray.fromObject(papers);
+		JSONObject jsonObject = JSONObject.fromObject(pagination);
 		
-		return jsonArray.toString();
+		return jsonObject.toString();
 	}
 	/**
 	 * 学生查询试卷
@@ -172,7 +174,12 @@ public class TestpaperCtrl {
    
         }
         jdbcTemplate.batchUpdate(sqlString, params);
-        JSONObject jsonObject = JSONObject.fromObject(resultPaper);
+        JSONObject jsonObject = new JSONObject();
+        boolean flag=false;
+        if(resultPaper.getQuestionList().size()>0) {
+        	flag=true;
+        }
+        jsonObject.put("succ", flag);
         return jsonObject.toString();
         
 	}
@@ -192,6 +199,7 @@ public class TestpaperCtrl {
 			String sql1="delete from testpaper where paperid="+list[i];
 			String sql2="delete from rule where id=(select ruleid from paper where id="+list[i]+")";
 			String sql3="delete from paper where id="+list[i];
+			String sql4="delete from dopaper where paperid="+list[i];
 			
 			int reslut = dbHelper.deleteSql(sql1,null);
 			if(reslut==0) {
@@ -211,6 +219,24 @@ public class TestpaperCtrl {
 				flag=false;
 				break;
 			}
+			//删除附表
+			Pagination<Dopaper> pagination = new Pagination<Dopaper>();
+			pagination.appendWhere("where paperid="+list[i]);
+			pagination =  dbHelper.search(Dopaper.class, pagination);
+			if(pagination.getRowsize()>0) {
+				for(Dopaper dopaper:pagination.getRows()) {
+					dbHelper.deleteSql("delete from dotestpaper where dopaperid="+dopaper.getId(),null);
+				}
+				//删除dopaper表
+				reslut = dbHelper.deleteSql(sql4,null);
+				if(reslut==0) {
+					error="删除失败";
+					flag=false;
+					break;
+				}
+			}
+			
+			
 		}
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.put("succ", flag);

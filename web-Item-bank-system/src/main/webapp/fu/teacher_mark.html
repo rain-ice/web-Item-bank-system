@@ -1,0 +1,26 @@
+
+<div class="mdui-table-fluid">
+    <table class="mdui-table">
+      <thead>
+        <tr>
+          <th>序号</th>
+          <th>姓名</th>
+          <th>时间</th>
+          <th>成绩</th>
+          <th class="mdui-table-col-numeric">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div style="text-align: center;">
+	<button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="mark_previouspage()" >
+		<i class="mdui-icon material-icons">arrow_back</i>
+	</button>
+	<input id="input_mark_page"  type="text" name="page" style="width: 35px;" value="0">
+	<button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="mark_nextpage()">
+		<i class="mdui-icon material-icons">arrow_forward</i>
+	</button>
+	<span>/<span id="totalpage"></span>页</span>
+</div>
